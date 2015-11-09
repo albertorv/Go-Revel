@@ -77,6 +77,8 @@
 							<li>
 								Recolector de basura eficiente, libre de latencia.
 							</li>
+							<li>No se utilizan los ; (punto y coma) para separar sentencias</li>
+							<li>Las cláusulas de condición no llevan paréntesis.</li>
 							<li>Soportado en Google por App Engine</li>
 
 						</ol>
@@ -88,10 +90,10 @@
 				
 					<ul>
 						<li>Creado por Google.</li>
-						<li>Lanzado en Noviembre del 2009</li>
+						<li>Lanzado el 10 de noviembre del 2009</li>
 						<li>Diseñado por: Robert Giresemer, Rob Pike y Ken Thompson.</li>
 						<li>Influencias de C, Limbo, Modula, Newsqueak, Oberon, Pascal y Python.</li>
-						<li>Soporte para AJAX.</li>
+						
 					</ul>
 				</section>
 
@@ -99,27 +101,61 @@
 					<h2>Ventajas:</h2><br>
 					<ul>
 						<li>Sintaxis concisa</li>
-						<li>La Curva de Aprendizaje de KumbiaPHP es muy corta, y si a esto le agregamos experiencia en el manejo de Programación Orientada a Objetos, será mas rápida.</li>
-						<li>Sistema de Plantillas sencillo.</li>
-						<li>Separación MVC.</li>
-						<li>Soporte para AJAX.</li>
+						<li>Diseñado para ser eficiente en tiempo de desarrollo.</li>
+						<li>Rápido en tiempo de ejecución.</li>
+						<li>Es un lenguaje concurrente, y con un buen soporte para paralelización.</li>
+						<li>Soporta tests y <b>benchmarks</b> de forma nativa.</li>
+						
 					</ul>
+
+					<footer>
+					<br>
+						<div>
+							<p>Benchmarks: técnica utilizada para medir el rendimiento de un sistema o componente del mismo.</p>
+						</div>
+					</footer>
 				</section>
 
-				
+				<section>
+					<h3>Servicion Online que trabajan con Go</h3>
+					<ul>
+						<li>Amazon Web Services</li>
+						<li>Azure</li>
+						<li>Digital Ocean</li>
+						<li>Google Cloud Platform for Go</li>
+						<li>Heroku</li>
+						<li>IBM Bluemix</li>
+						<li>OpenStack</li>
+					</ul>
+				</section>
 				<section>
 					<h2>Instalación</h2><br />
-					<p><strong>Paso1: </strong>Descargar su archivo comprimido desde <a href="https://github.com/KumbiaPHP/KumbiaPHP/">https://github.com/KumbiaPHP/KumbiaPHP/</a> </p><br />
+					<p><strong>Ubuntu: </strong>  </p><br />
 					
-					<p><strong>Paso2: </strong>
-					Configurar Servidor Web
+						<pre><code data-trim contenteditable>
+						$ sudo add-apt-repository ppa:gophers/go
+					</code></pre>
+					
+					<pre><code data-trim contenteditable>
+						$ sudo apt-get update
+					</code></pre>
+					<pre><code data-trim contenteditable>
+						$ sudo apt-get install golang-stable
+					</code></pre>
+					
+				</section>
+				<section>
+					<p><strong>Windows: </strong><br>
+					Descargar del Sitio Oficial y descomprimir en C: ngo y agregar esa ruta a GOROOT y c: ngo nbin a PATH
 				<ol>
-					<li>#a2enmod rewrite</li>
-					<li>Editar el archivo con direccion etc/apache2/default-server.conf</li>
-					<li>AllowOverride None debemos de cambiarlo por AllowOverride ALL</li>
-					<li>Se reinicia el servicio<pre><code data-trim contenteditable>
-						/etc/init.d/apache2 restart
-					</code></pre> </li>
+					<li>Los archivos fuentes de go tiene la extensión .go y se corren
+con la siguiente linea. <pre><code data-trim contenteditable>
+						$ go run miprograma.go
+					</code></pre></li>
+					<li>Para compilar el archivo para su distribuci´on se utiliza
+compile <pre><code data-trim contenteditable>
+						$ go build miprograma.go
+					</code></pre></li>
 				</ol>
 				</p>
 				</section>
